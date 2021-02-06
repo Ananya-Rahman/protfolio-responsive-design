@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Design Protfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"> </script>
+</head>
+    <body>
+        <nav>
+            <div class="container">
+                <img class="menu-icon" src="./images/menu-icon.png" alt="Click to expand menu"/>
+                <ul class="nav-list">
+                    <li>  <a href="#">HOME </a> </li>
+                    <li>  <a href="#">WORK </a> </li>
+                    <li>  <a href="#">ABOUT </a> </li>
+                    <li>  <a href="#">CONTACT </a> </li>
+                </ul>
+                <ul class="social-list">
+                    <li><a href="#"><img src="images/youtube.png" alt="YouTube"/> </a></li>
+                    <li><a href="#"><img src="images/twitter.png" alt="Twitter"/> </a></li>
+                    <li><a href="#"><img src="images/facebook.png" alt="Facebook"/> </a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <header class="container">
+            <h1>My Design Protfolio</h1>
+            <h3>DESIGN SOLUTION FOR YOUR BUISNESS</h3>
+        </header>
+
+        <section class="feature">
+            <ul class="feature-list container">
+                <li class="feature-web">
+                    <a href="# ">
+                        <img  class="feature-icon" src="images/web.png" alt=" Web Design">
+                        <h3 class="feature-title">WEB DESIGN </h3>
+                    </a>
+                </li>
+                <li class="feature-graphic">
+                    <a href="# ">
+                        <img  class="feature-icon" src="images/graphic.png" alt=" Graphic Design">
+                        <h3 class="feature-title"> GRAPHIC DESIGN</h3>
+                    </a>
+                </li>
+                <li class="feature-video">
+                    <a href="# ">
+                        <img  class="feature-icon" src="images/video.png" alt="Video Production">
+                        <h3 class="feature-title">VIDEO PRODUCTION </h3>
+                    </a>
+                </li>
+                
+            </ul>
+
+        </section> <!-- END FEATURE SECTION-->
+    
+
+      <article class="body-text container">
+          <h2>Design Service</h2>
+          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit sapiente, 
+              distinctio magni quis beatae, culpa officia, mollitia quam at quasi ut fugit labore quisquam illum dolorum molestias dolores 
+              laudantium blanditiis tempora ducimus ullam eos.
+               Voluptatum modi laboriosam ratione officiis ut natus expedita et nihil, nobis doloremque ipsa fugiat? 
+               Atque similique perferendis quod. Rerum quasi facilis, enim quaerat
+                alias minima eligendi dolorum 
+                 
+                </p>
+
+
+      </article> 
+       <section class="portfolio-samples">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <ul class="portfolio-list clearfix">
+             <li class="port-laptops"> 
+                 <p class="caption">
+                     <a href="#">Lorem ipsum dolor sit amet. </a><img class ="sample-icon" src="./images/web-small.png" /> 
+                 </p>
+                </li> 
+            <li class="port-acme"> 
+                <p class="caption">
+                    <a href="#">Lorem ipsum dolor sit amet.  </a><img class ="sample-icon" src="./images/graphic-small.png" />  
+                </p>
+           
+           </li> 
+           <li class="port-demoreel"> 
+            <p class="caption">
+                <a href="#">Lorem ipsum dolor sit amet.  </a><img class ="sample-icon" src="./images/video-small.png" /> 
+            </p>
+            </li> 
+
+       <li class="port-logo"> 
+        <p class="caption">
+            <a href="#">Lorem ipsum dolor sit amet.  </a><img class ="sample-icon" src="./images/graphic-small.png" /> 
+        </p>
+    </li>   
+
+    </ul>
+   </div>
+            
+</section> <!--end portfolio section -->
+
+<footer>
+    <div class="container ">
+        <div class="col-one-third">
+            <h3>From the Blog</h3> 
+            <dl class="footer-list">
+                <dt>Lorem ipsum dolor sit </dt>
+                <dd>on March 10, 2014 </dd>
+                <dt>constaructor Lorem, ipsum dolor. </dt>
+                <dd>on March 8, 2014 </dd>
+                <dt>Lorem ipsum dolor sit </dt>
+                <dd>on March 3, 2014 </dd>
+
+            </dl>
+        </div>
+        <div class="col-one-third">
+            <h3>Contact US</h3>
+            <address>
+                123 45th st <br/>
+                podunk, TX, 7777 <br/> 
+                (555)555-5555 <br/> <br/>
+                <a href="mailto:info@email.com">info@email.com</a>
+            </address>
+            
+        </div>
+        <div class="col-one-third registration">
+            <h3>Register for Updates</h3>
+            <form >
+                <input type="text" id="name" placeholder="Name"/>
+                <input type="text" id="email" placeholder="Email@gamil.com"/>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+            
+        </div>
+        <div style="clear:both">
+
+        </div>
+
+    </div> <!--container-->
+    <span class="copyright">&copy;copyright 2014, My Protfolio Design</span>
+</footer>
+<script>
+
+$(function(){
+    $nav = $('.nav-list');
+
+    $('.menu-icon').click(function(){
+        $nav.slideToggle();
+    });
+    
+    $(window).resize(function(){
+        if ( $(window).width() >= 640 ) {
+            $nav.show();
+        }
+        else  {
+            $nav.hide();
+        }
+    });
+});
+
+ </script>
+</body>
+
+</html>
